@@ -1,0 +1,26 @@
+Setup:
+
+Delete all branches except main
+Ensure Chat permissions do not auto-approve write
+Make sure main.py does not include Author: comment
+Make sure all feature branches are deleted
+./restart.sh
+Connect IBM VPN and open settings->MCP at least once
+Make sure the task list contains only tasks 1-4
+
+Open web browser tabs:
+https://github.com/deleeuwblue/bob-todo-app-8oct
+http://127.0.0.1:8000/
+https://bob.ibm.com/admin/subscription
+
+Prompts:
+
+Add a comment "Author: Adam" to @main.py
+
+The github repo contains an issue. Create a new branch so I can fix it. I’m doing this as a live demo so work as quickly as possible and minimise your output accordingly. Also Minimise testing - just work fast to fix the code! Make sure you update all necessary components, including frontend and backend. Create some release notes in HTML format that should be written to my workspace.
+
+Commit all files then create a Pull Request.
+
+Troubleshooting:
+pkill -f "uvicorn main:app"
+lsof -ti :8000 | xargs kill
