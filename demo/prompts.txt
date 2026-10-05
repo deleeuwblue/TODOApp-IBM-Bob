@@ -24,3 +24,5 @@ Commit all files then create a Pull Request.
 Troubleshooting:
 pkill -f "uvicorn main:app"
 lsof -ti :8000 | xargs kill
+
+x
